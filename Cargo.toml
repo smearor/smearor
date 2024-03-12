@@ -1,0 +1,28 @@
+cargo-features = [
+    "workspace-inheritance"
+]
+
+[workspace]
+resolver = "2"
+members = [
+    "modules/smearor"
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Andreas Schaeffer <andreas@schaeffernet.de>"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/aschaeffer/smearor/"
+homepage = "https://smearor.io/"
+keywords = ["smart-mirror", "reactive", "touch", "touchscreen", "touch-gestures"]
+
+[workspace.dependencies]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = "symbols"
