@@ -1,1 +1,1 @@
-# About Smearor
+{{#include ../../README.md}}
