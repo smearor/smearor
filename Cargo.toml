@@ -5,7 +5,7 @@ cargo-features = [
 [workspace]
 resolver = "2"
 members = [
-    "modules/smearor"
+    "modules/smearor/src-tauri"
 ]
 
 [workspace.package]
