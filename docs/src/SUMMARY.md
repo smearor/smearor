@@ -1,5 +1,15 @@
 # Smearor
 
 - [About](./About.md)
+- [Requirements](./Requirements.md)
+- [Hardware](./Hardware.md)
+- [Features](./Features.md)
+- [Addons](./Addons.md)
+  - [Compliments](./Addons_Compliments.md)
+  - [Clock](./Addons_Clock.md)
+  - [Development](./Addons_Development.md)
+- [Architecture](./Architecture.md)
+- [Design](./Design.md)
+- [Changelog](./Changelog.md)
 - [Code of Conduct](./CodeOfConduct.md)
 - [License](./License.md)
