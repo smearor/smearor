@@ -1,0 +1,65 @@
+name: Book
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "docs/**"
+      - "CHANGELOG.md"
+      - "CODE_OF_CONDUCT.md"
+      - "LICENSE.md"
+      - "README.md"
+      - ".github/workflows/book.yml"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "docs/**"
+      - "CHANGELOG.md"
+      - "CODE_OF_CONDUCT.md"
+      - "LICENSE.md"
+      - "README.md"
+      - ".github/workflows/book.yml"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  book:
+    name: Book
+    runs-on: ubuntu-latest
+    steps:
+      - name: VCS Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: 'latest'
+
+      - name: Install preprocessor mdbook-mermaid
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook-mermaid
+          version: latest
+          use-tool-cache: true
+
+      - name: Install preprocessor mdbook-admonish
+        uses: actions-rs/install@v0.1
+        with:
+          crate: mdbook-admonish
+          version: latest
+          use-tool-cache: true
+
+      - name: Build Book
+        working-directory: ./docs
+        run: mdbook build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/book
+          destination_dir: smearor-book
