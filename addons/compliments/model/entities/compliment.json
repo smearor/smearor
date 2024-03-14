@@ -1,0 +1,15 @@
+{
+  "namespace": "smearor",
+  "type_name": "compliment",
+  "description": "A compliment",
+  "components": [
+  ],
+  "properties": [
+    {
+      "name": "text",
+      "description": "The text of the compliment",
+      "data_type": "string",
+      "socket_type": "input"
+    }
+  ]
+}

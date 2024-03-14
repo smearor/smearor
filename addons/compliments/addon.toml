@@ -1,0 +1,15 @@
+name = "Compliments"
+description = "This module displays a random compliment."
+
+# These plugins are required
+dependencies = [
+    "inexor-rgf-plugin-http",
+    "inexor-rgf-plugin-result"
+]
+
+entities = [
+    "compliments/model/entities/compliment.json"
+]
+
+[[cronjobs]]
+name = "compliment"
