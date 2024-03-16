@@ -10,6 +10,7 @@
   - [Development](./Addons_Development.md)
 - [Architecture](./Architecture.md)
 - [Design](./Design.md)
+- [Building](./Building.md)
 - [Changelog](./Changelog.md)
 - [Code of Conduct](./CodeOfConduct.md)
 - [License](./License.md)
