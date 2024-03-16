@@ -28,6 +28,12 @@ jobs:
     steps:
       - name: VCS Checkout
         uses: actions/checkout@v3
+      - name: Install packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: libgtk-3-dev
+          version: 1.1
+        if: matrix.os == 'ubuntu-latest'
       - name: Install latest nightly
         uses: actions-rs/toolchain@v1
         with:
