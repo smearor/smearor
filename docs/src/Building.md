@@ -20,3 +20,9 @@ pnpm run tauri dev
 ```shell
 cargo build --release
 ```
+
+Keen users can opt into multi-threaded mode with the -Z threads option:
+
+```shell
+RUSTFLAGS="-Z threads=8" cargo build --release
+```
