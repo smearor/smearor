@@ -343,6 +343,9 @@ pnpm run tauri dev
 <h2 id="build-in-release-mode"><a class="header" href="#build-in-release-mode">Build in Release Mode</a></h2>
 <pre><code class="language-shell">cargo build --release
 </code></pre>
+<p>Keen users can opt into multi-threaded mode with the -Z threads option:</p>
+<pre><code class="language-shell">RUSTFLAGS="-Z threads=8" cargo build --release
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="changelog"><a class="header" href="#changelog">Changelog</a></h1>
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,

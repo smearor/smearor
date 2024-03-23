@@ -187,6 +187,9 @@ pnpm run tauri dev
 <h2 id="build-in-release-mode"><a class="header" href="#build-in-release-mode">Build in Release Mode</a></h2>
 <pre><code class="language-shell">cargo build --release
 </code></pre>
+<p>Keen users can opt into multi-threaded mode with the -Z threads option:</p>
+<pre><code class="language-shell">RUSTFLAGS="-Z threads=8" cargo build --release
+</code></pre>
 
                     </main>
 
