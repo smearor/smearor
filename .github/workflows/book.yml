@@ -61,11 +61,11 @@ jobs:
           git: https://github.com/wuxianucw/mdbook-classy
           branch: master
 
-      - name: Install preprocessor mdbook-emojicodes
-        uses: baptiste0928/cargo-install@v3
-        with:
-          crate: mdbook-emojicodes
-          version: ^0.3.0
+#      - name: Install preprocessor mdbook-emojicodes
+#        uses: baptiste0928/cargo-install@v3
+#        with:
+#          crate: mdbook-emojicodes
+#          version: ^0.3.0
 
       - name: Build Book
         working-directory: ./docs
