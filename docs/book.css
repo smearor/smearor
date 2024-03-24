@@ -3,12 +3,20 @@
 }
 
 .sidebar {
-    background: url("images/smearor.png") var(--sidebar-bg) no-repeat;
-    background-size: 250px;
+    background: url("images/smearor_f_27.jpg") var(--sidebar-bg) no-repeat;
+    background-size: calc(var(--sidebar-width) - 50px);
     background-position-x: center;
+    background-position-y: 25px;
+
+    box-shadow: var(--shadow-3);
+}
+
+.sidebar:hover {
+    box-shadow: var(--shadow-5);
 }
 
 .sidebar .chapter {
-    margin-top: 350px;
+    margin-top: calc(var(--sidebar-width) + 25px);
+    margin-left: 25px;
     background-color: var(--sidebar-bg);
 }
