@@ -1,0 +1,44 @@
+name: Audit Dependencies
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "modules/**/Cargo.toml"
+      - "modules/**/Cargo.lock"
+      - "modules/**/audit.toml"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - "audit.toml"
+      - ".github/workflows/audit.yml"
+  pull_request:
+    branches: [ main ]
+    paths:
+      - "modules/**/Cargo.toml"
+      - "modules/**/Cargo.lock"
+      - "modules/**/audit.toml"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - "audit.toml"
+      - ".github/workflows/audit.yml"
+  # Rerun periodically to pick up new advisories
+  schedule:
+    - cron: "0 0 * * *"
+  # Run manually
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  audit:
+    name: Audit Dependencies
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: VCS Checkout
+        uses: actions/checkout@v4
+      - name: Audit Rust Dependencies
+        uses: actions-rust-lang/audit@v1
