@@ -15,6 +15,8 @@ command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.classy]
+# Note: Install mdbook-classy from git, because the published version (0.1.0) of mdbook-classy doesn't work
+# cargo install --git https://github.com/wuxianucw/mdbook-classy.git mdbook-classy
 
 [output]
 
