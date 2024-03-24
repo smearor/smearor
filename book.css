@@ -3,12 +3,69 @@
 }
 
 .sidebar {
-    background: url("images/smearor.png") var(--sidebar-bg) no-repeat;
-    background-size: 250px;
+    background: url("images/smearor_f_27.jpg") var(--sidebar-bg) no-repeat;
+    background-size: calc(var(--sidebar-width) - var(--size-8));
     background-position-x: center;
+    background-position-y: var(--size-4);
+
+    box-shadow: var(--shadow-3);
+
+    font-family: "Roboto Regular", sans-serif;
+}
+
+.sidebar:hover {
+    box-shadow: var(--shadow-5);
 }
 
 .sidebar .chapter {
-    margin-top: 350px;
+    margin-top: calc(var(--sidebar-width) + 25px);
+    margin-left: 25px;
     background-color: var(--sidebar-bg);
+}
+
+.blob1 {
+    font-size: var(--font-size-7);
+    color: var(--gray-10);
+    background: var(--gradient-24);
+    aspect-ratio: var(--ratio-ultrawide);
+    border-radius: var(--radius-blob-1);
+}
+
+.blob1:hover {
+    animation: var(--animation-fade-in) forwards;
+}
+
+.blob1 p {
+    block-size: var(--size-15);
+    margin: var(--size-10);
+    padding: var(--size-10);
+}
+
+table {
+    width: 100%;
+    background: var(--gradient-23);
+    aspect-ratio: var(--ratio-ultrawide);
+    border-radius: var(--radius-3);
+}
+
+h1 {
+    font-size: var(--font-size-8);
+    letter-spacing: var(--font-letterspacing-4);
+}
+
+h2 {
+    font-size: var(--font-size-6);
+    letter-spacing: var(--font-letterspacing-3);
+}
+
+.admonish-info {
+    background: var(--gradient-23);
+}
+
+.admonish-info div.admonish-title {
+    background: var(--gradient-23);
+}
+
+.admonish-info div.admonish-title a {
+    color: var(--gray-10);
 }
