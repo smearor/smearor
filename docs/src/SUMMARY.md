@@ -9,7 +9,7 @@
   - [Clock](./Addons_Clock.md)
   - [Development](./Addons_Development.md)
 - [Architecture](./Architecture.md)
-- [Design](./Design.md)
+- [Design System](./Design_System.md)
 - [Building](./Building.md)
 - [Changelog](./Changelog.md)
 - [Code of Conduct](./CodeOfConduct.md)
