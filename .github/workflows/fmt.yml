@@ -25,14 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: VCS Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install latest nightly
         uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           toolchain: nightly
           components: rustfmt
       - name: Run cargo fmt
-        uses: actions-rs/cargo@v1
-        with:
-          command: "fmt"
-          args: "--all -- --check"
+        uses: actions-rust-lang/rustfmt@v1
