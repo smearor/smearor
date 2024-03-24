@@ -43,18 +43,22 @@ jobs:
           mdbook-version: 'latest'
 
       - name: Install preprocessor mdbook-mermaid
-        uses: actions-rs/install@v0.1
+        uses: baptiste0928/cargo-install@v3
         with:
           crate: mdbook-mermaid
-          version: latest
-          use-tool-cache: true
+          version: ^0.13.0
 
       - name: Install preprocessor mdbook-admonish
-        uses: actions-rs/install@v0.1
+        uses: baptiste0928/cargo-install@v3
         with:
           crate: mdbook-admonish
-          version: latest
-          use-tool-cache: true
+          version: ^1.15.0
+
+      - name: Install preprocessor mdbook-classy
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: mdbook-classy
+          version: ^0.1.0
 
       - name: Build Book
         working-directory: ./docs
