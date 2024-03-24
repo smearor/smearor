@@ -2,7 +2,8 @@
 
 ## Step 1: Touchscreen
 
-You need a special touch screen with the following feature: Touch through-glass.
+{:.blob1}
+You need a **special** touch screen with the following feature: Touch through-glass.
 The touch screen works right through glass and can turn glass surfaces into an interactive touch screen display.
 
 ### :desktop_computer: Recommended Monitors
@@ -17,20 +18,21 @@ The touch screen works right through glass and can turn glass surfaces into an i
 | iiyama | [iiyama ProLite TF5539UHSC-B1AG](https://iiyama.com/gl_en/products/prolite-tf5539uhsc-b1ag/) |
 | iiyama | [iiyama ProLite TF6539UHSC-B1AG](https://iiyama.com/gl_en/products/prolite-tf6539uhsc-b1ag/) |
 
+```admonish info
 [Search here for touch through-glass monitors from iiyama](https://iiyama.com/gl_en/products/touchscreens/openframe/#/filter/category:15/additional:Ttg)
+```
 
 ## Step 2: Raspberry Pi 5
 
-The Raspberry Pi 5 is mini computer with low energy consumption. With two HDMI ports it can
+{:.blob1}
+The **Raspberry Pi 5** is mini computer with low energy consumption. With two HDMI ports it can
 control the touch screen. With the GPIO ports it's possible to add sensors like temperature
 and humidity. The Raspberry Pi 5 is powerful enough to run KODI.
 
 ## :mirror: Step 3: Spy Mirror
 
-You need a special type of mirror with the following features:
-
-* Two-way mirror
-* Dielectric in order to make it work with the touch screen
+{:.blob1}
+You need a special type of mirror with the following features: <br>1. Two-way mirror <br>2. Dielectric
 
 ### Recommended Spy Mirror Glass
 
