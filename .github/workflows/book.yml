@@ -58,7 +58,8 @@ jobs:
         uses: baptiste0928/cargo-install@v3
         with:
           crate: mdbook-classy
-          version: ^0.1.0
+          git: https://github.com/wuxianucw/mdbook-classy
+          branch: master
 
       - name: Build Book
         working-directory: ./docs
