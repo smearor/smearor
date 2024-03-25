@@ -1,0 +1,17 @@
+{
+  "$schema": "../gen/schemas/linux-schema.json",
+  "identifier": "linux-capability",
+  "windows": [
+    "smearor"
+  ],
+  "platforms": [
+    "iOS",
+    "android"
+  ],
+  "permissions": [
+    "dbus::call"
+  ],
+  "capabilities": [
+    
+  ]
+}
