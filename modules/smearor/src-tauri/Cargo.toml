@@ -9,7 +9,7 @@ repository.workspace = true
 readme = "../../../README.md"
 
 [build-dependencies]
-tauri-build = { version = "2.0.0-beta", features = [] }
+tauri-build = { workspace = true, features = [] }
 
 [dependencies]
 json5 = "0.4.1"
