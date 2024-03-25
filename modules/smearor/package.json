@@ -19,7 +19,9 @@
     "@tauri-apps/plugin-autostart": "2.0.0-beta.2",
     "@tauri-apps/plugin-notification": "2.0.0-beta.2",
     "@tauri-apps/plugin-os": "2.0.0-beta.2",
-    "@tauri-apps/plugin-shell": ">=2.0.0-beta.0"
+    "@tauri-apps/plugin-shell": ">=2.0.0-beta.0",
+    "handlebars": "^4.7.8",
+    "interactjs": "^1.10.26"
   },
   "devDependencies": {
     "@tauri-apps/cli": ">=2.0.0-beta.0",
