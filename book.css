@@ -69,3 +69,7 @@ h2 {
 .admonish-info div.admonish-title a {
     color: var(--gray-10);
 }
+
+.icon-big {
+    font-size: var(--font-size-8);
+}
