@@ -88,3 +88,25 @@
     font-weight: 500;
     src: url('source-code-pro-v11-all-charsets-500.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'Knewave';
+    font-style: normal;
+    font-weight: 500;
+    src: url(knewave.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Knewave Outline';
+    font-style: normal;
+    font-weight: 500;
+    src: url(knewave-outline.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'devicon';
+    font-style:normal;
+    font-weight:normal;
+    font-display:block;
+    src:url("devicon.woff") format("woff");
+}
